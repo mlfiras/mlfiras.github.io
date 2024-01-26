@@ -5,6 +5,12 @@
 @import "{{ site.theme }}";
 
 // General
+html{
+  // Fix Navigation bar convering content
+scroll-behavior: smooth;
+scroll-padding-top: var(--scroll-padding, 50px) ;
+}
+
 p
 {
   text-align: justify;
