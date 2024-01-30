@@ -1,12 +1,5 @@
-# VScode
-.vscode
-
-# Jekyll geenerated directory
 _site
-.jekyll-cache
-.jekyll-metadata
 .sass-cache
-
-# Bundle
-vendor
+.jekyll-metadata
+.jekyll-cache
 Gemfile.lock
