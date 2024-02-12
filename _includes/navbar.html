@@ -1,3 +1,5 @@
+{% assign navItems = "home,about/,models/,testCases/,templates/,contact" %}
+{% assign navItems = navItems | split: "," | string %}
 <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
@@ -8,53 +10,64 @@
         <!-- TODO.md(mathbagu): ameliorer le style en version mobile -->
         <nav class="nav-menu d-none d-lg-block">
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li class="drop-down"><a href="/pages/overview">Overview</a>
-                    <ul>
-                        <li><a href="/pages/overview">About</a></li>
-                        <li><a href="/pages/overview/governance">Governance</a></li>
-                        <li><a href="/pages/overview/license">License</a></li>
-                        <li><a href="/pages/overview/release-cycle">Release Cycle</a></li>
-                        <li><a href="/pages/overview/roadmap">Roadmap</a></li>
-                    </ul>
-                </li>
-                <li class="drop-down"><a href="/pages/documentation">Documentation</a>
-                    <ul>
-                        <li><a href="/pages/documentation/index.html#user-documentation">User documentation</a></li>
-                        <li><a href="/pages/documentation/index.html#grid-model">Grid model</a></li>
-                        <li><a href="/pages/documentation/index.html#grid-formats">Grid exchange formats</a></li>
-                        <li><a href="/pages/documentation/index.html#simulation">Simulation</a></li>
-                        <li><a href="/pages/documentation/index.html#developer-documentation">Developer documentation</a></li>
-                        <li><a href="/pages/documentation/index.html#data">Data management</a></li>
-                    </ul>
-                </li>
-                <li><a href="/pages/download">Download</a></li>
-                <li class="drop-down"><a href="/pages/contributing">Contributing</a>
-                    <ul>
-                        <li><a href="https://wiki.lfenergy.org/display/HOME/Code+of+Conduct">Code of conduct</a></li>
-                        <li><a href="/pages/contributing/technical-charter">Technical charter</a></li>
-                        <li><a href="/pages/overview/license">License</a></li>
-                    </ul>
-                </li>
-                <li class="drop-down"><a href="/pages/community">Community</a>
-                    <ul>
-                        <li><a href="/pages/community">Contact</a></li>
-                        <li><a href="/pages/community/events">Events</a></li>
-                    </ul>
-                </li>
-                {% if page.dir contains "/pages/documentation"  %}
-                <li>
-                    <!--
-                        inside a <a/> for similar styling as other items. Add
-                         py-1 because the input is taller than just text, so
-                        compensate with less padding on the <a/>
-                    -->
-                    <a class="py-1" ><form class="d-inline-flex form-inline" action="/pages/documentation/search" method="get">
-                        <!-- px-2 py-1 like in form-control-sm but overriden by vesper.css so put it back -->
-                        <input class="form-control form-control-sm px-2 py-1" id="search-box" name="query" type="text" placeholder="Search" aria-label="Search" />
-                    </form></a>
-                </li>
+                {% for item in navItems %}
+                <!-- 2 cases: with or without dropdown menu -->
+                {% if item contains '/' %}
+                  {% assign dropdown = true %}
+                  {% assign itemDropD = item | remove: "/"%}
+                {% else %}
+                  {% assign dropdown = false %}
+                {% endif%}
+                <!-- Find the current page that corresponds to the navigation item -->
+                {% for page in site.pages %}
+                  {% assign pageFound = false %}
+                  {% assign urlEndCurrent = page.url | split: "/" | last %}
+                  {% if dropdown %}
+                    {% if urlEndCurrent == itemDropD %}
+                      {% assign pageFound = true %}
+                    {% endif%}
+                  {% else %}
+                    {% assign itemHtml = item | append: ".html" %}
+                    {% if urlEndCurrent == item or urlEndCurrent == itemHtml%}
+                      {% assign pageFound = true %}
+                    {% endif%}
+                  {% endif%}
+                  <!-- Exception for the home link -->
+                  {% if page.title=="Home" and item =="home"%}
+                    {% assign pageFound = true %}
+                  {% endif %}
+                  <!-- Gather information from the corresponding page -->
+                  {% if pageFound%}
+                    {% assign pageNo = forloop.index0 %}
+                    {% assign url = page.url | relative_url%}
+                    {% assign urlEnd = url | split: "/" | last %}
+                    {% assign title = page.title %}
+                  {% endif %}
+                {% endfor %}
+                <!-- Highlight current page -->
+                {% if url == current_page %}
+                  {% assign current = ' current' %}
+                {% else %}
+                  {% assign current = null %}
                 {% endif %}
+                <!-- Case of a dropdown menu: include all subfolders -->
+                {% if dropdown %}
+                <li class="drop-down">
+                    <a href="{{url}}">{{title}}</a>
+                    <ul>
+                        {% for pageDropD in site.pages %}
+                        {% assign urlArrayDropD = (pageDropD.url | split: '/') %}
+                        {% assign dir = urlArrayDropD[-2] %}
+                        {% if dir == urlEnd %}
+                          <li><a href="{{pageDropD.url | relative_url}}">{{pageDropD.title}}</a></li>
+                        {% endif%}
+                      {% endfor %}
+                    </ul>
+                </li>
+                {% else %}
+                <li><a href="{{url}}">{{title}}</a></li>
+              {% endif%}
+            {% endfor %}
             </ul>
         </nav>
     </div>
