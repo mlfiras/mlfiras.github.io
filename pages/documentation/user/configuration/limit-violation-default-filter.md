@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 # limit-violation-default-filter

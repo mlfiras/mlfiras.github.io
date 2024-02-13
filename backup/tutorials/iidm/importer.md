@@ -1,6 +1,6 @@
 ---
 title: How to write an IIDM importer
-layout: default
+layout: base
 ---
 
 From Powsybl's [Importer](../../iidm/importer/index.md) interface, it is possible to add a new file format from which

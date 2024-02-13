@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 # Write the Java code to perform sensitivity analysis

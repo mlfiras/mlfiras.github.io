@@ -1,6 +1,6 @@
 ---
 id: invlim1
-layout: default
+layout: base
 title: Integrator control block with (positive) time constant T and non-windup variable limits on output
 tags: ["control block", "integrator", "limited integrator"]
 author: Mathilde Bongrain

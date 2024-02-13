@@ -1,6 +1,6 @@
 ---
 title: itools-packager
-layout: default
+layout: base
 ---
 
 The `itools-packager` Maven plugin provides a way to assemble distribution bundles based on [iTools](../tools/index.md).

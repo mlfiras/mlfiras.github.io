@@ -1,6 +1,6 @@
 ---
 title: plugins-info
-layout: default
+layout: base
 todo:
     - add links to the different kind of plugins
     - update the list of available plugins

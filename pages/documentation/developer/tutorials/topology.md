@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 # How to manage topological views?

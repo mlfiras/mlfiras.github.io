@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 todo:
     - the debug property seems unused
 ---

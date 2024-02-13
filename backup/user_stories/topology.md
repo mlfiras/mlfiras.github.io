@@ -1,6 +1,6 @@
 ---
 title: Second basic tutorial - topology management
-layout: default
+layout: base
 ---
 
 

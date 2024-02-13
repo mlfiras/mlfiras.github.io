@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 # iTools run-script

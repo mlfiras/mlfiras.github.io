@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 # external-security-analysis-config

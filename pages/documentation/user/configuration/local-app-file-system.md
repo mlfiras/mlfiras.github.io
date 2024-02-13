@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 todo:
     - add links to missing pages
 ---

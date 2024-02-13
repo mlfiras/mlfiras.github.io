@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 # Network Area Diagram - SVG Writing

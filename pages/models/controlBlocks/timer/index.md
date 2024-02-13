@@ -1,6 +1,6 @@
 ---
 id: timer1
-layout: default
+layout: base
 title: Timer control block
 tags: ["control block", "timer"]
 author: Mathilde Bongrain

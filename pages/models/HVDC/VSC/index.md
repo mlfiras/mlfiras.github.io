@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 title: VSC HVDC Model
 tags: ["phasor", "HVDC", "VSC", "generic"]
 ---

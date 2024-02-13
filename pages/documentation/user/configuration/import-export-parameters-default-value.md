@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 # import-export-parameters-default-value

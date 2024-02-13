@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 todo:
     - add link to loadflow-validation results page
 ---

@@ -1,6 +1,6 @@
 ---
 id: pict2lim1
-layout: default
+layout: base
 title: Proportional integral (PI) controller with non-windup limit on the integral term and limit on the proportional term
 tags: ["control block", "PI", "Proportional Integral", "non-windup", "limits"]
 author: Mathilde Bongrain

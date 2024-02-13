@@ -1,6 +1,6 @@
 ---
 title: Advanced tutorials
-layout: default
+layout: base
 ---
 
 ## Deployment

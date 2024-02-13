@@ -1,6 +1,6 @@
 ---
 title: SecurityAnalysisParameters
-layout: default
+layout: base
 ---
 
 The `com.powsybl.security.SecurityAnalysisParameters` class provides the generic parameters for all `com.powsybl.security.SecurityAnalysis`

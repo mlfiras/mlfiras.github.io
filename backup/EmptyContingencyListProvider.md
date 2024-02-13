@@ -1,6 +1,6 @@
 ---
 title: EmptyContingencyListProvider
-layout: default
+layout: base
 ---
 
 The `com.powsybl.contingency.EmptyContingencyListProvider` is a special implementation of the

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 # Python scripting <img src="./img/python-logo.png" alt="" style="vertical-align: bottom" height="40"/>

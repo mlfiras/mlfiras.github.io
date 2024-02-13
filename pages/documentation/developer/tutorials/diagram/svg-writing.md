@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 # Single Line Diagram - SVG Writing

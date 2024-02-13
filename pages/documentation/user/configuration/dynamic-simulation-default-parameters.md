@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 --- 
 
 # dynamic-simulation-default-parameters
