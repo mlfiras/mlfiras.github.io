@@ -68,32 +68,20 @@
                 <li><a href="{{url}}">{{title}}</a></li>
               {% endif%}
             {% endfor %}
-            {% if page.dir contains "/pages/models"  %}
+            {% if page.dir contains "/pages/models" or page.dir contains "/pages/testCases" or page.dir == "/pages/" %}
             <li>
                 <!--
                     inside a <a/> for similar styling as other items. Add
                      py-1 because the input is taller than just text, so
                     compensate with less padding on the <a/>
                 -->
-                <a class="py-1" ><form class="d-inline-flex form-inline" action="/pages/models/search" method="get">
+                <a class="py-1" ><form class="d-inline-flex form-inline" action="/pages/search" method="get">
                     <!-- px-2 py-1 like in form-control-sm but overriden by vesper.css so put it back -->
                     <input class="form-control form-control-sm px-2 py-1" id="search-box" name="query" type="text" placeholder="Search" aria-label="Search" />
                 </form></a>
             </li>
-            {% elsif page.dir contains "/pages/testCases"  %}
-            <li>
-                <!--
-                    inside a <a/> for similar styling as other items. Add
-                     py-1 because the input is taller than just text, so
-                    compensate with less padding on the <a/>
-                -->
-                <a class="py-1" ><form class="d-inline-flex form-inline" action="/pages/testCases/search" method="get">
-                    <!-- px-2 py-1 like in form-control-sm but overriden by vesper.css so put it back -->
-                    <input class="form-control form-control-sm px-2 py-1" id="search-box" name="query" type="text" placeholder="Search" aria-label="Search" />
-                </form></a>
-            </li>
-            {% endif %}
             </ul>
+            {% endif %}
         </nav>
     </div>
 </header>
