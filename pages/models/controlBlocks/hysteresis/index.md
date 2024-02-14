@@ -1,6 +1,6 @@
 ---
 id: hyst1
-layout: page
+layout: base
 title: Hysteresis control block
 tags: ["control block", "hysteresis"]
 author: Mathilde Bongrain

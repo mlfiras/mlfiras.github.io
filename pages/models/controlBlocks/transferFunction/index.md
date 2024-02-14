@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: Transfer function between an input and output one time constant
 tags: ["control block", "transfer function"]
 author: Mathilde Bongrain

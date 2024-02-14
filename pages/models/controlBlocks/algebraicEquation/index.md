@@ -1,6 +1,6 @@
 ---
 id: algeq1
-layout: page
+layout: base
 title: Algebraic equation
 tags: ["control block", "algebraic equation"]
 author: Mathilde Bongrain

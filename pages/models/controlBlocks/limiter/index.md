@@ -1,6 +1,6 @@
 ---
 id: lim1
-layout: page
+layout: base
 title: Limiter control block with constant bounds
 tags: ["control block", "limiter"]
 author: Mathilde Bongrain

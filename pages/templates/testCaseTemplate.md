@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: Test cases description template
 tags: []
 author: Toto

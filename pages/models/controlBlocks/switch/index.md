@@ -1,6 +1,6 @@
 ---
 id: switch1
-layout: page
+layout: base
 title: Switch
 tags: ["control block", "switch"]
 author: Mathilde Bongrain

@@ -1,6 +1,6 @@
 ---
 id: abs1
-layout: page
+layout: base
 title: Absolute value of input
 tags: ["control block", "discrete", "abs", "absolute value"]
 author: Mathilde Bongrain
