@@ -285,10 +285,11 @@ a.call-to-action {
   text-align: left;
   a {
     text-decoration: none;
-    color: #6EC1E4;
+    color: #4994b8;
   }
   a:hover {
     font-weight: bold;
+    color: #53ae49
   }
 }
 
