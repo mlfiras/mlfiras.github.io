@@ -9,7 +9,7 @@ title: Search
 <script>
     window.store = {
     {% for page in site.pages %}
-    {% if page.title.size > 0 and page.content.size > 0 and page.layout == "default" %}
+    {% if page.title.size > 0 and page.content.size > 0 and page.layout == "base" %}
     "{{ page.url | slugify }}": {
         "url": "{{ page.url }}",
         "title": "{{ page.title | xml_escape }}",
