@@ -7,7 +7,7 @@
 
             for (var i = 0; i < results.length; i++) {  // Iterate over the results
                 var item = store[results[i].ref];
-                appendString += '<h3><a href="' + item.url + '">' + item.title + '</a></h3>';
+                appendString += '<h4><a href="' + item.url + '">' + item.title + '</a></h4>';
                 appendString += '<p>' + item.content.substring(0, 150) + '...</p>';
             }
 
