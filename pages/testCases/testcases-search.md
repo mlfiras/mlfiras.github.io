@@ -9,7 +9,7 @@ title: TestCases-search
 <script>
     window.store = {
     {% for page in site.pages %}
-    {% if page.title.size > 0 and page.content.size > 0 and page.layout == "base" and page.dir contains "/pages/testCases" %}
+    {% if page.title.size > 0 and page.content.size > 0 and page.dir contains "/pages/testCases" and page.url != "/pages/testCases/testcases-search.html" %}
     "{{ page.url | slugify }}": {
         "url": "{{ page.url }}",
         "title": "{{ page.title | xml_escape }}",
