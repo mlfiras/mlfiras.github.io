@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Search
+title: TestCases-search
 ---
 
 <noscript><h2>ERROR</h2>You need JavaScript to search.</noscript>
@@ -9,7 +9,7 @@ title: Search
 <script>
     window.store = {
     {% for page in site.pages %}
-    {% if page.title.size > 0 and page.content.size > 0 and page.layout == "base" %}
+    {% if page.title.size > 0 and page.content.size > 0 and page.layout == "base" and page.dir contains "/pages/testCases" %}
     "{{ page.url | slugify }}": {
         "url": "{{ page.url }}",
         "title": "{{ page.title | xml_escape }}",
