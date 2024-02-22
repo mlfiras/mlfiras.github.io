@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: base
 title: Models
 ---
 
-{% include search.html %}
+{% bibliography --file references %}
 
 {% include folderNav.html %}
