@@ -22,3 +22,15 @@ exclude:
 
 plugins:
   - jekyll-relative-links
+  - jekyll-scholar
+
+
+scholar:
+  style: apa
+  locale: en
+  sort_by: none
+  order: ascending
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: ""
+  query: "@*"
