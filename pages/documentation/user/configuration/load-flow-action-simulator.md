@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 todo:
     - the debug property seems unused
 ---

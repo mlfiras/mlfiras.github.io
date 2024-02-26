@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # Working a tutorial with IntelliJ IDEA

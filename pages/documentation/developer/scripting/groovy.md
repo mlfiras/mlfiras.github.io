@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # Groovy scripting <img src="./img/groovy-logo.png" alt="" style="vertical-align: bottom" height="45"/>

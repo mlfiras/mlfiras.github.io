@@ -1,5 +1,5 @@
 ---
-layout: base # do not modify
+layout: page # do not modify
 title: Test cases description template # put the name of your test case, try to be as specific as possible
 tags: [] # pick none, one or several tags for the following categories:
 # Opensource : tag to be added if there is at least one open source implementation of this test case

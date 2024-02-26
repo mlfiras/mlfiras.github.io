@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # external-security-analysis-config

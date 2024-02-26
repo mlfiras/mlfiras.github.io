@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 The `compare-security-analysis-results` command is used to compare [security-analysis](../../simulation/securityanalysis/index.md#outputs) results, stored in JSON.

@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # Create an iTools command in Java

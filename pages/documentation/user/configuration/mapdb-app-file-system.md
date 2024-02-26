@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 todo:
     - add link to AFS concept
     - add link to MapDB AFS implementation

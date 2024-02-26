@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # Network Area Diagram - SVG Writing

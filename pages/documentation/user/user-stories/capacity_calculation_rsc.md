@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # Capacity calculation for RSC

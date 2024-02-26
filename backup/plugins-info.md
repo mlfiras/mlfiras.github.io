@@ -1,6 +1,6 @@
 ---
 title: plugins-info
-layout: base
+layout: page
 todo:
     - add links to the different kind of plugins
     - update the list of available plugins
