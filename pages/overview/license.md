@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # Mozilla Public License Version 2.0

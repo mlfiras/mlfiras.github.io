@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # How to manage topological views?

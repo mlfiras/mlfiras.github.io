@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # limit-violation-default-filter

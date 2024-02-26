@@ -1,6 +1,6 @@
 ---
 id: db1
-layout: base
+layout: page
 title: Deadband control block
 tags: ["control block", "deadband"]
 author: Mathilde Bongrain

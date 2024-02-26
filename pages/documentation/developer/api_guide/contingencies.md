@@ -1,6 +1,6 @@
 
 ---
-layout: base
+layout: page
 ---
 
 # Contingency API

@@ -1,6 +1,6 @@
 ---
 id: limvb1
-layout: base
+layout: page
 title: Limiter control block with variable bounds
 tags: ["control block", "limiter", "limiter variable bounds"]
 author: Mathilde Bongrain

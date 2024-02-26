@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # load-flow-based-phase-shifter-optimizer

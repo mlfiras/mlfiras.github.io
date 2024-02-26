@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # Bundle an iTools package with maven

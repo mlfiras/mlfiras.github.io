@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # Write the Java code to perform power flows

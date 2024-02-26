@@ -1,6 +1,6 @@
 ---
 id: int1
-layout: base
+layout: page
 title: Integrator control block with a positive time constant T
 tags: ["control block", "integrator"]
 author: Mathilde Bongrain

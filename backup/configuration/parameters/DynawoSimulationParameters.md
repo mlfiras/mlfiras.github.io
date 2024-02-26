@@ -1,6 +1,6 @@
 ---
 title: DynawoSimulationParameters
-layout: base
+layout: page
 ---
 
 The `com.powsybl.dynawo.simulator.DynawoSimulationParameters` class provides the specific parameters of a dynamic simulation run with Dynawo.

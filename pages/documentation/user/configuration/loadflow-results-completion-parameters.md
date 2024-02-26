@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 ---
 
 # loadflow-results-completion-parameters

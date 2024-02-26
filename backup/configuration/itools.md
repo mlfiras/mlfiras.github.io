@@ -1,6 +1,6 @@
 ---
 title: itools.conf
-layout: base
+layout: page
 ---
 
 The `POWSYBL_HOME/etc/itools.conf` file is a [properties](https://en.wikipedia.org/wiki/.properties) file that contains
