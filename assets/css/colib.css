@@ -70,6 +70,7 @@ a.call-to-action {
 
 .markdown-body {
   margin-right: 200px;
+  min-height: 750px;
 }
 
 .markdown-body h1,
