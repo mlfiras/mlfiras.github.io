@@ -5,3 +5,4 @@ tags: []
 ---
 
 {% include folderNav.html %}
+{% bibliography --file references %}
