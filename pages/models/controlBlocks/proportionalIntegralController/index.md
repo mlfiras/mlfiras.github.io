@@ -1,6 +1,6 @@
 ---
 id: pictl1
-layout: base
+layout: page
 title: Proportional integral (PI) controller
 tags: ["control block", "PI", "Proportional Integral"]
 author: Mathilde Bongrain

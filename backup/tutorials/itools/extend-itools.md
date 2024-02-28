@@ -1,6 +1,6 @@
 ---
 title: How to extend iTools
-layout: base
+layout: page
 ---
 
 The `iTools` script is designed to be easily extended with new commands that would be added to the set of

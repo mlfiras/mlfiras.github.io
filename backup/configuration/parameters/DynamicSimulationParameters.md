@@ -1,6 +1,6 @@
 ---
 title: DynamicSimulationParameters
-layout: base
+layout: page
 ---
 
 The `com.powsybl.dynamicsimulation.DynamicSimulationParameters` class provides the generic parameters for all `com.powsybl.dynamicsimulation.DynamicSimulation`

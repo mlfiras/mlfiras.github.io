@@ -1,6 +1,6 @@
 ---
 title: Advanced tutorials
-layout: base
+layout: page
 ---
 
 ## Deployment

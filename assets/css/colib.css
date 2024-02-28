@@ -5,6 +5,17 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+ /* Evaluate Btn */
+ .btn-primary {
+  background-color: #4994b8 !important;
+  border: #4994b8 !important;
+}
+
+.btn-primary:hover{
+  background-color: #53ae49 !important;
+  border: #53ae49 !important;
+}
+
 /* Titles */
 h1 {
     margin-top: -4rem;
@@ -59,6 +70,7 @@ a.call-to-action {
 
 .markdown-body {
   margin-right: 200px;
+  min-height: 750px;
 }
 
 .markdown-body h1,

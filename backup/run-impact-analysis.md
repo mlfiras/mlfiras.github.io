@@ -1,6 +1,6 @@
 ---
 title: run-impact-analysis
-layout: base
+layout: page
 todo:
     - add link to IPST implementation (pclf / https://github.com/itesla/ipst/tree/master/pclfsim-integration)
 ---

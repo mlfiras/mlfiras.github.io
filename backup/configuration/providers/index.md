@@ -1,6 +1,6 @@
 ---
 title: Configuration Providers
-layout: base
+layout: page
 ---
 
 Configuration can typically come from different sources. For exemple, command line or desktop apps usually store the configuration in files in the user home directory; server deployments might use a central configuration database; or during testing, the configuration might be hardcoded in the test.
