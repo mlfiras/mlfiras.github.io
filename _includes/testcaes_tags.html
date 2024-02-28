@@ -18,16 +18,16 @@
     {% assign tag = count_and_tag | split:":::" | last | strip %}
     {% assign count = 0 %}
 
-    {% assign models = false %}
+    {% assign testcases = false %}
 
     {% for post in site.tags[tag] %}
       {% if post.folder == 'testcases' %}
-        {% assign models = true %}
+        {% assign testcases = true %}
         {% capture count %}{{ count | plus:1 }}{% endcapture %}
       {% endif %}
     {% endfor %}
 
-    {% if models == true %}
+    {% if testcases == true %}
       <a href="#{{ tag | slugify }}" class="btn btn-outline-primary tag-btn">
           <span class="fa fa-tag" aria-hidden="true"></span> {{ tag }} ({{ count }})
       </a>
@@ -86,13 +86,13 @@
         {% assign prev_char = "#" %}
         {% for tag in tags_alphabetically_sorted %}
 
-          {% assign models = false %}
+          {% assign testcases = false %}
           {% for post in site.tags[tag] %}
             {% if post.folder == 'testcases' %}
-              {% assign models = true %}
+              {% assign testcases = true %}
             {% endif %}
           {% endfor %}
-          {% if models == true %}
+          {% if testcases == true %}
             {% assign current_char = tag | slice: 0 %}
             {% if current_char != prev_char %}
               {% assign prev_char = current_char %}
