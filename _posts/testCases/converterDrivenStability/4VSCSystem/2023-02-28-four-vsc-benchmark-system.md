@@ -1,9 +1,6 @@
 ---
-folder: testcases
 layout: page
 title: Four VSC benchmark system
-tags:
-- RMS
 ---
 
 # Four VSC benchmark System

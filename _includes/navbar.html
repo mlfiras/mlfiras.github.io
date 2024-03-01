@@ -55,10 +55,9 @@
                 <li class="drop-down">
                     <a href="{{url}}">{{title}}</a>
                     <ul>
-                        {% for pageDropD in site.pages %}
-                        {% assign urlArrayDropD = (pageDropD.url | split: '/') %}
-                        {% assign dir = urlArrayDropD[-2] %}
-                        {% if dir == urlEnd and pageDropD.title != "TestCases-search" and pageDropD.title != "Models-search" %}
+                        {% for pageDropD in site.posts %}
+                        {% assign urlArrayDropD = (pageDropD.path | split: '/') %}
+                        {% if urlArrayDropD[1] == urlEnd and urlArrayDropD[-1] contains 'index' and pageDropD.title != "TestCases-search" and pageDropD.title != "Models-search" and  pageDropD.title != "Models" and pageDropD.title != "Templates" and pageDropD.title != "Test cases" and pageDropD.title != "About" %}
                           <li><a href="{{pageDropD.url | relative_url}}">{{pageDropD.title}}</a></li>
                         {% endif%}
                       {% endfor %}
